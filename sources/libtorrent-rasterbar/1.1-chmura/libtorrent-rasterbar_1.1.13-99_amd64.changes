@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Wed, 09 Nov 2019 14:31:21 +0000
+Source: libtorrent-rasterbar
+Binary: libtorrent-rasterbar9 libtorrent-rasterbar-dev libtorrent-rasterbar-dbg python-libtorrent python-libtorrent-dbg python3-libtorrent python3-libtorrent-dbg
+Architecture: source amd64
+Version: 1.1.13-99
+Distribution: bionic
+Urgency: low
+Maintainer: Calum Lind <calumlind@gmail.com>
+Changed-By: Chmura Builder <foobar@Build.Chmuranet.net>
+Description:
+ libtorrent-rasterbar-dbg - libtorrent C++ BitTorrent Library - Debug Symbols
+ libtorrent-rasterbar-dev - libtorrent C++ BitTorrent Library - Development Files
+ libtorrent-rasterbar9 - libtorrent C++ BitTorrent Library (rasterbar)
+ python-libtorrent - libtorrent Python Bindings (rasterbar)
+ python-libtorrent-dbg - libtorrent Python Bindings - Debug Symbols
+ python3-libtorrent - libtorrent Python 3 Bindings (rasterbar)
+ python3-libtorrent-dbg - libtorrent Python 3 Bindings - Debug Symbols
+Changes:
+ libtorrent-rasterbar (1.1.13-99) bionic; urgency=low
+ .
+   * Auto build.
+Checksums-Sha1:
+ ed6429797e7cf3a3a3d8b0a7d53f6540cce565f0 1537 libtorrent-rasterbar_1.1.13-99.dsc
+ c4cf9b45ec279d952fb301860ad6b0e033a1596b 2358548 libtorrent-rasterbar_1.1.13-99.tar.xz
+ 57c41df92fa4e3cd52c5e509acdc53326646a6bb 54670276 libtorrent-rasterbar-dbg_1.1.13-99_amd64.deb
+ d69babad62dc3faaaf785959066fdfbb5caa9322 1953324 libtorrent-rasterbar-dev_1.1.13-99_amd64.deb
+ f3b0bc66ae21dfece645d9492d91e36213bcfc43 1268624 libtorrent-rasterbar9_1.1.13-99_amd64.deb
+ 82dadedb784f13006950796a4e0ff7f3fbd96622 10180 libtorrent-rasterbar_1.1.13-99_amd64.buildinfo
+ debf5fc0eed294989ac335ff06d730536880e02c 341608 python-libtorrent-dbg_1.1.13-99_amd64.deb
+ a59d38986b756edae752725fa30e875bb722ab3c 316068 python-libtorrent_1.1.13-99_amd64.deb
+ 2baa01ee895638e7e93ecb45631b7a6aab26ee55 345060 python3-libtorrent-dbg_1.1.13-99_amd64.deb
+ 5033dcdd1a9f7f9349cde54561111a7c993751b2 318440 python3-libtorrent_1.1.13-99_amd64.deb
+Checksums-Sha256:
+ 1c65acdd81db40b8bab9bcce3378b690cee446902e55b0b373d913fb167a264e 1537 libtorrent-rasterbar_1.1.13-99.dsc
+ 3ec8f1b40112012f2dd99633fdcd92869b92ecec7e14a3e55e6bde9c951aeb19 2358548 libtorrent-rasterbar_1.1.13-99.tar.xz
+ ecc941bb06608d37f0769ad5461489a8f5a04afa846548b2b5b3e0bec9c28a0b 54670276 libtorrent-rasterbar-dbg_1.1.13-99_amd64.deb
+ 4762a481ad9c2ce5459050eddd31ac901530b1a54b4a06a86c67818968b900c7 1953324 libtorrent-rasterbar-dev_1.1.13-99_amd64.deb
+ e0da03b2546fd5728b6a9cb3ee23bcd94f64cf1e6fda7fa09584b224a7141ce0 1268624 libtorrent-rasterbar9_1.1.13-99_amd64.deb
+ 9806526e00412454ddd417bf8eeb1ade4d31a0b1803f73a9ba5962c1b5103fef 10180 libtorrent-rasterbar_1.1.13-99_amd64.buildinfo
+ eb2d84be570f2725b39922594dad0b6f06d0754f13b9fc532a34d0421d1758aa 341608 python-libtorrent-dbg_1.1.13-99_amd64.deb
+ 9159e42301ad5d42e98cf95bf5a4d36c8d94025322f61f920e8ff420e9b056f8 316068 python-libtorrent_1.1.13-99_amd64.deb
+ f4376e14245d7ef2719e8a75d44dcac77c2b80780493b683054e9ffefafc0543 345060 python3-libtorrent-dbg_1.1.13-99_amd64.deb
+ 732d19206cc44c545e88b731b6b05dfaca4d190817a5381ac70c330f1f70851f 318440 python3-libtorrent_1.1.13-99_amd64.deb
+Files:
+ 3999e93ff2e60c9a30acaf54c3257376 1537 libs optional libtorrent-rasterbar_1.1.13-99.dsc
+ 456a0322b7f63370d86b8b708b86c98f 2358548 libs optional libtorrent-rasterbar_1.1.13-99.tar.xz
+ 3b37e5c4253052e04c879b0bfafca0d7 54670276 debug extra libtorrent-rasterbar-dbg_1.1.13-99_amd64.deb
+ 499f413efc593cd311489f149c133183 1953324 libdevel optional libtorrent-rasterbar-dev_1.1.13-99_amd64.deb
+ 3891a7f4fa1ff68744b190a26c656730 1268624 libs optional libtorrent-rasterbar9_1.1.13-99_amd64.deb
+ 8952c9279fa9366aa23146d0a6709590 10180 libs optional libtorrent-rasterbar_1.1.13-99_amd64.buildinfo
+ ab58190ed193be9656fc15470ca92aac 341608 debug extra python-libtorrent-dbg_1.1.13-99_amd64.deb
+ 26e0fa71eba77976b8b614b94bf89316 316068 python optional python-libtorrent_1.1.13-99_amd64.deb
+ 3412eb7c9191d5d762652e8b8e7ce86b 345060 debug extra python3-libtorrent-dbg_1.1.13-99_amd64.deb
+ 8ef33c0bc5ba4b31f725c5601a688fe9 318440 python optional python3-libtorrent_1.1.13-99_amd64.deb
