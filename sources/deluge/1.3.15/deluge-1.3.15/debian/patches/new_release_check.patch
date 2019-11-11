@@ -1,0 +1,41 @@
+Description: Disable checking for new upstream releases enabled by default
+ Users can still enable it throught the preferences menus.
+Forwarded: not-needed
+Origin: vendor
+Author: Adam Cécile (Le_Vert) <gandalf@le-vert.net>
+
+Index: deluge/deluge/core/preferencesmanager.py
+===================================================================
+--- deluge.orig/deluge/core/preferencesmanager.py	2017-07-31 20:03:15.674968273 -0400
++++ deluge/deluge/core/preferencesmanager.py	2017-07-31 20:03:15.670968662 -0400
+@@ -109,7 +109,7 @@
+     "auto_managed": True,
+     "move_completed": False,
+     "move_completed_path": deluge.common.get_default_download_dir(),
+-    "new_release_check": True,
++    "new_release_check": False,
+     "proxies": {
+         "peer": {
+             "type": 0,
+Index: deluge/deluge/ui/gtkui/gtkui.py
+===================================================================
+--- deluge.orig/deluge/ui/gtkui/gtkui.py	2017-07-31 20:03:15.674968273 -0400
++++ deluge/deluge/ui/gtkui/gtkui.py	2017-07-31 20:03:15.670968662 -0400
+@@ -136,7 +136,7 @@
+     "enable_appindicator": False,
+     "lock_tray": False,
+     "tray_password": "",
+-    "check_new_releases": True,
++    "check_new_releases": False,
+     "default_load_path": None,
+     "window_maximized": False,
+     "window_x_pos": 0,
+@@ -158,7 +158,7 @@
+     "autoadd_enable": False,
+     "autoadd_location": "",
+     "choose_directory_dialog_path": deluge.common.get_default_download_dir(),
+-    "show_new_releases": True,
++    "show_new_releases": False,
+     "signal_port": 40000,
+     "ntf_tray_blink": True,
+     "ntf_sound": False,

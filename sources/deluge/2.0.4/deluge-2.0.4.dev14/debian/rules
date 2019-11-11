@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+export DEB_BUILD_OPTIONS=nocheck
+
+%:
+	dpkg-parsechangelog --show-field Version | cut -f1 -d'+' > RELEASE-VERSION
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_build:
+	python3 setup.py build
+
+override_dh_auto_install:
+	python3 setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb
+	set -ex; \
+	cd debian/tmp/usr/lib/python*/*-packages/deluge/plugins/; \
+	for egg in *.egg; do \
+		mkdir -p $${egg%-py?.*}.egg; \
+		unzip $$egg -d $${egg%-py?.*}.egg; \
+		rm -f $$egg; \
+	done

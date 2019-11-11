@@ -1,0 +1,22 @@
+Description: Fix the single_proxy ui to True as unlikely any users
+ using <=0.15 and need to have different proxy type settings.
+Origin: http://dev.deluge-torrent.org/changeset/38d7b7cdfde3c50d#file0
+Bug: http://dev.deluge-torrent.org/ticket/3039
+Debian-Bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=870247
+
+Index: deluge/ui/gtkui/preferences.py
+===================================================================
+--- deluge.orig/deluge/ui/gtkui/preferences.py	(revision d977915f32085a6c42a42cf5934b98bc4c7fa8f3)
++++ deluge/deluge/ui/gtkui/preferences.py	(revision 38d7b7cdfde3c50d6263602ffb03af92fcbfa52e)
+@@ -319,9 +319,6 @@
+             # Add proxy stuff
+ 
+-            # Display workaround for single proxy in libtorrent >v0.16
+-            try:
+-                lt_single_proxy = component.get("PreferencesManager").LT_SINGLE_PROXY
+-            except AttributeError:
+-                lt_single_proxy = False
++            # Display workaround for single proxy in libtorrent >= v0.16
++            lt_single_proxy = True
+ 
+             for t in ("peer", "web_seed", "tracker", "dht"):
