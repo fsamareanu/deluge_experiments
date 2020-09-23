@@ -1,1 +1,0 @@
--L../../src/.libs -L/usr/lib/x86_64-linux-gnu -Wl,-z,relro -Wl,--as-needed -fvisibility=hidden -fvisibility-inlines-hidden  -lboost_system -lpthread   -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_python37 -lpthread  -lssl -lcrypto 

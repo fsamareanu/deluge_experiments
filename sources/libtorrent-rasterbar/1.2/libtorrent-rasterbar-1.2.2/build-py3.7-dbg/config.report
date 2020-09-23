@@ -1,0 +1,75 @@
+   Config results:
+  -=-=-=-=-=-=-=-=-
+
+Package:
+  name:                 libtorrent-rasterbar
+  version:              1.2.2
+  git revision:         25ea726
+
+Build environment:
+  build system:         x86_64-pc-linux-gnu
+  host system:          x86_64-pc-linux-gnu
+  target system:        x86_64-pc-linux-gnu
+
+Compiler and linker flags:
+  CPPFlags:             -I/usr/include -Wdate-time -D_FORTIFY_SOURCE=2 -I/usr/include/python3.7dm -I/usr/include/python3.7dm
+  CFlags:               -lpthread -g -O2 -fdebug-prefix-map=/home/rtorrent/work/git/deluge_experiments_debian10/sources/libtorrent-rasterbar/1.2-wip/libtorrent-rasterbar-1.2.2=. -fstack-protector-strong -Wformat -Werror=format-security -fvisibility=hidden
+  CXXFlags:             -g -O2 -fdebug-prefix-map=/home/rtorrent/work/git/deluge_experiments_debian10/sources/libtorrent-rasterbar/1.2-wip/libtorrent-rasterbar-1.2.2=. -fstack-protector-strong -Wformat -Werror=format-security -ftemplate-depth=512 -Wno-format-zero-length -fvisibility=hidden -fvisibility-inlines-hidden
+  LDFlags:              -L/usr/lib/x86_64-linux-gnu -Wl,-z,relro -Wl,--as-needed -fvisibility=hidden -fvisibility-inlines-hidden
+  Libs:                  -lboost_system -lpthread  
+  Defs:                 -DPACKAGE_NAME=\"libtorrent-rasterbar\" -DPACKAGE_TARNAME=\"libtorrent-rasterbar\" -DPACKAGE_VERSION=\"1.2.2\" -DPACKAGE_STRING=\"libtorrent-rasterbar\ 1.2.2\" -DPACKAGE_BUGREPORT=\"arvid@libtorrent.org\" -DPACKAGE_URL=\"http://www.libtorrent.org\" -DPACKAGE=\"libtorrent-rasterbar\" -DVERSION=\"1.2.2\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_PTHREAD=1 -DHAVE_BOOST=/\*\*/ -DHAVE_CXX11=1 -DHAVE_BOOST_SYSTEM=/\*\*/ -DHAVE_CLOCK_GETTIME=1 -DNDEBUG=1 -DTORRENT_USE_INVARIANT_CHECKS=0 -DTORRENT_USE_OPENSSL=1 -DTORRENT_USE_LIBCRYPTO=1 -DHAVE_PYTHON=\"3.7\" -DHAVE_BOOST_PYTHON=/\*\*/ -DHAVE_ICONV=1 -DICONV_CONST= -DBOOST_ASIO_HAS_STD_CHRONO=1 -DBOOST_EXCEPTION_DISABLE=1 -DBOOST_ASIO_ENABLE_CANCELIO=1 -DTORRENT_BUILDING_SHARED=1
+
+Build options:
+  deprecated functions: yes
+  debug build:          no
+  invariant checks:     no
+  logging support:      yes
+
+Features:
+  encryption support:   yes
+  dht support:          yes
+
+Extra builds:
+  examples:             no
+  tests:                no
+  python bindings:      yes
+
+Pthread library:
+  CFlags:               -lpthread
+  Libs:                 -lpthread 
+
+Boost libraries:
+  version:              
+  CPPFlags:             -I/usr/include
+  LDFlags:              -L/usr/lib/x86_64-linux-gnu
+  boost.system:         -lboost_system
+  boost.python:         -lboost_python37
+
+Python environment:
+  -automake-
+  binary:               /usr/bin/python3.7-dbg
+  version:              3.7
+  platform:             linux
+  prefix:               ${prefix}
+  exec_prefix:          ${exec_prefix}
+  pythondir:            ${prefix}/lib/python3.7/site-packages
+  pkgpythondir:         ${pythondir}/libtorrent-rasterbar
+  pyexecdir:            ${exec_prefix}/lib/python3.7/site-packages
+  pkgpyexecdir:         ${pyexecdir}/libtorrent-rasterbar
+
+  -m4-
+  cppflags:             -I/usr/include/python3.7dm
+  ldflags:              -lpython3.7dm -lcrypt -lpthread -ldl  -lutil -lm 
+  extra libs:           -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions
+
+
+External libraries:
+  system libiconv:      yes
+
+Iconv library:
+  Iconv Libs:           
+
+OpenSSL library:
+  OpenSSL Libs:         -lssl -lcrypto
+  OpenSSL LDFlags:      
+  OpenSSL Includes:     

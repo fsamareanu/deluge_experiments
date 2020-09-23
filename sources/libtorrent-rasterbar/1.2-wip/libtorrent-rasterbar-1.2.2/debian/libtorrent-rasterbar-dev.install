@@ -1,4 +1,0 @@
-usr/include/*
-usr/lib/*/libtorrent*.a
-usr/lib/*/libtorrent*.so
-usr/lib/*/pkgconfig/*.pc

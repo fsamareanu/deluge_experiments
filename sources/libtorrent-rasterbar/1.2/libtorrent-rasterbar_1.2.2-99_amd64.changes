@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Thu, 9 Nov 2019 20:19:09 +0000
+Source: libtorrent-rasterbar
+Binary: libtorrent-rasterbar10 libtorrent-rasterbar-dev python-libtorrent python3-libtorrent
+Architecture: source amd64
+Version: 1.2.2-99
+Distribution: bionic
+Urgency: low
+Maintainer: Calum Lind <calumlind@gmail.com>
+Changed-By: Chmura Package Builder <foobar@chmuranet.net>
+Description:
+ libtorrent-rasterbar-dev - libtorrent C++ BitTorrent Library - Development Files
+ libtorrent-rasterbar10 - libtorrent C++ BitTorrent Library
+ python-libtorrent - libtorrent Python Bindings
+ python3-libtorrent - libtorrent Python 3 Bindings
+Changes:
+ libtorrent-rasterbar (1.2.2-99) bionic; urgency=low
+ .
+   * Added patches.
+Checksums-Sha1:
+ 5aab5cfaf54a1bd40aae3a98cc3d6ee92c3f0f85 1216 libtorrent-rasterbar_1.2.2-99.dsc
+ 4f1771ec44731aebd7429d47c8fd1814014b9649 3000044 libtorrent-rasterbar_1.2.2-99.tar.xz
+ 707007311c135ed3c161aa56939f7be90cac7883 2197024 libtorrent-rasterbar-dev_1.2.2-99_amd64.deb
+ 7f95d372a7d8e46de55d7d36911bc280bde9eadd 28857292 libtorrent-rasterbar10-dbgsym_1.2.2-99_amd64.ddeb
+ 9308135a66ee53e402a19428dc50a301d5e06af8 1246284 libtorrent-rasterbar10_1.2.2-99_amd64.deb
+ bd9dc8cf256f62351f03c427c6da5753fc899aea 10131 libtorrent-rasterbar_1.2.2-99_amd64.buildinfo
+ 6028464a601fbfa9235dee5ff7bf62686350b423 205952 python-libtorrent-dbgsym_1.2.2-99_amd64.ddeb
+ 9c0b17dece98a9dc3da82dcae5a81cc528de39be 359084 python-libtorrent_1.2.2-99_amd64.deb
+ 0865446c3cbce7f3904d295648d07a47e5b74569 206008 python3-libtorrent-dbgsym_1.2.2-99_amd64.ddeb
+ 311b50b67835b8f953bf703d4d907ab13189ce31 357788 python3-libtorrent_1.2.2-99_amd64.deb
+Checksums-Sha256:
+ 18f021551a5e4d90e03acff18d1e00ddf6f9425760e047636e6435cbd46c36a7 1216 libtorrent-rasterbar_1.2.2-99.dsc
+ 80ef16513af34bba1c23f210e87b4d1f8d877ef23a8c3fa31039cd6cdd8f06e3 3000044 libtorrent-rasterbar_1.2.2-99.tar.xz
+ 47458428ac574d1c4e58720e3e113194211a3740b64eb5d78a67cf5271c0f323 2197024 libtorrent-rasterbar-dev_1.2.2-99_amd64.deb
+ ad0fb2cccfa350b70715998fce9eea08ee32346494e5fd1253fb97e7cd833585 28857292 libtorrent-rasterbar10-dbgsym_1.2.2-99_amd64.ddeb
+ 1070dce1c8aa3f5cf19605cf8ccd689a2f8440813439b10304ab8a79814ca466 1246284 libtorrent-rasterbar10_1.2.2-99_amd64.deb
+ 157c97c6ca8cd33597a1b7256f525ec3387bb60c4a717e7055ea9873c9223738 10131 libtorrent-rasterbar_1.2.2-99_amd64.buildinfo
+ 31f020f8a603d72a1980291e4f0070c0f51baaf003ae779cbf00a38e62387bbb 205952 python-libtorrent-dbgsym_1.2.2-99_amd64.ddeb
+ 7a4a2c10ee7288cae9a7f5ba993cc7622101c7af5097a261aca03d590c4dc4bf 359084 python-libtorrent_1.2.2-99_amd64.deb
+ 246bf3ade0b56da6228aead369d0eb9480f0da64a325552127c91d94a46ba192 206008 python3-libtorrent-dbgsym_1.2.2-99_amd64.ddeb
+ b12756b5b169a8a161f47d8e4ee63412892610df5a57c00c2676c682cae89b9a 357788 python3-libtorrent_1.2.2-99_amd64.deb
+Files:
+ aa3356838d560bab34910ae5e20f0897 1216 libs optional libtorrent-rasterbar_1.2.2-99.dsc
+ e4a2e58f9cd9a3c10eb64787d44c7931 3000044 libs optional libtorrent-rasterbar_1.2.2-99.tar.xz
+ a92e893f7d4e2e17717d81ff35d151d5 2197024 libdevel optional libtorrent-rasterbar-dev_1.2.2-99_amd64.deb
+ 197661786ef9b56e956b1f88e185ab0b 28857292 debug optional libtorrent-rasterbar10-dbgsym_1.2.2-99_amd64.ddeb
+ 87376b2c80c2fc1bc41057437f2e8327 1246284 libs optional libtorrent-rasterbar10_1.2.2-99_amd64.deb
+ ae9a0e2fb036fbed70d321bc2fd1af97 10131 libs optional libtorrent-rasterbar_1.2.2-99_amd64.buildinfo
+ e34d2cc040e7f71c4484365de27179a1 205952 debug optional python-libtorrent-dbgsym_1.2.2-99_amd64.ddeb
+ 9e5a4ba48b488161578d5a576b019faa 359084 python optional python-libtorrent_1.2.2-99_amd64.deb
+ afffc0e22780f9f35c90f0c4f36d8835 206008 debug optional python3-libtorrent-dbgsym_1.2.2-99_amd64.ddeb
+ f498bf9aa152d3c1eeb1c23d3c5722e6 357788 python optional python3-libtorrent_1.2.2-99_amd64.deb

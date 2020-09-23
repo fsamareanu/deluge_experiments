@@ -1,0 +1,80 @@
+#!/usr/bin/make -f
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+export DEB_LDFLAGS_MAINT_APPEND  = -Wl,--as-needed
+
+PYTHON2=$(shell pyversions -vr)
+PYTHON3=$(shell py3versions -vr)
+ALLPY=$(PYTHON2) $(PYTHON3) $(PYTHON2:%=%-dbg) $(PYTHON3:%=%-dbg)
+
+# Backward compat naming for libboost_python <= 1.67
+BOOST_VERSION=$(shell dpkg-query --showformat='$${Version}' --show libboost-python-dev  | cut -d '.' -f 1,2)
+# non-shell 'if gt version'
+ifeq "1.67" "$(word 1, $(sort 1.67 $(BOOST_VERSION)))"
+BOOST_PYTHON=boost_python
+else
+BOOST_PYTHON=boost_python-py
+endif
+
+CONFIGURE_ARGS = --with-libiconv --with-boost-libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
+
+%:
+	mkdir -p build-aux
+	cp m4/config.rpath build-aux
+	dh $@  --parallel --with python2,python3,autoreconf
+
+override_dh_auto_configure-nopy:
+	dh_auto_configure --builddirectory build -- $(CONFIGURE_ARGS)
+
+override_dh_auto_configure-%:
+	CPPFLAGS="$(CPPFLAGS) $(shell python$*-config --includes)" \
+	PYTHON_LDFLAGS="$(shell python$*-config --libs)" \
+	dh_auto_configure --builddirectory build-py$* -- \
+		PYTHON=/usr/bin/python$* \
+		PYTHON_INSTALL_PARAMS="--root=$(CURDIR)/debian/tmp --install-layout=deb" \
+		--enable-python-binding \
+		--with-boost-python=$(BOOST_PYTHON)$(subst .,,$(subst -dbg,,$*)) \
+		$(CONFIGURE_ARGS)
+
+	mv build-py$*/bindings/python build/bindings/python$*
+	cp -r bindings/python/src build/bindings/python$*
+	cp bindings/python/setup.py build/bindings/python$*
+
+override_dh_auto_configure: override_dh_auto_configure-nopy $(ALLPY:%=override_dh_auto_configure-%)
+
+
+override_dh_auto_build-nopy:
+	dh_auto_build --builddirectory build
+
+override_dh_auto_build-%:
+	dh_auto_build --builddirectory build/bindings/python$*
+
+override_dh_auto_build: override_dh_auto_build-nopy $(ALLPY:%=override_dh_auto_build-%)
+
+
+override_dh_auto_install-nopy:
+	dh_auto_install --builddirectory build
+
+override_dh_auto_install-%:
+	dh_auto_install --builddirectory build/bindings/python$*
+
+override_dh_auto_install: override_dh_auto_install-nopy $(ALLPY:%=override_dh_auto_install-%)
+
+
+override_dh_auto_clean:
+	rm -rf build build-py*
+	dh_auto_clean
+
+override_dh_compress:
+	dh_compress -Xcpp
+
+override_dh_strip:
+	dh_strip --dbgsym-migration='libtorrent-rasterbar-dbg (<< 1.2.0-0~)'
+
+override_dh_makeshlibs:
+	dh_makeshlibs -V
+
+override_dh_builddeb:
+	dh_builddeb -- -Z xz
