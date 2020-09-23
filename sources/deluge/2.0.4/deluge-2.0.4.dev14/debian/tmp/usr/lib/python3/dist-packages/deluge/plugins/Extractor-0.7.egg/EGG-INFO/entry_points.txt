@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    Extractor = deluge_extractor:CorePlugin
+    [deluge.plugin.gtk3ui]
+    Extractor = deluge_extractor:GtkUIPlugin
+    [deluge.plugin.web]
+    Extractor = deluge_extractor:WebUIPlugin
+    

@@ -1,0 +1,14 @@
+setup.py
+Notifications.egg-info/PKG-INFO
+Notifications.egg-info/SOURCES.txt
+Notifications.egg-info/dependency_links.txt
+Notifications.egg-info/entry_points.txt
+Notifications.egg-info/top_level.txt
+deluge_notifications/__init__.py
+deluge_notifications/common.py
+deluge_notifications/core.py
+deluge_notifications/gtkui.py
+deluge_notifications/test.py
+deluge_notifications/webui.py
+deluge_notifications/data/config.ui
+deluge_notifications/data/notifications.js

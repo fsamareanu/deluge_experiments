@@ -1,0 +1,7 @@
+deluge-common_2.0.4.dev14_all.deb net optional
+deluge-console_2.0.4.dev14_all.deb net optional
+deluge-gtk_2.0.4.dev14_all.deb net optional
+deluge-web_2.0.4.dev14_all.deb net optional
+deluge_2.0.4.dev14_all.deb net optional
+deluge_2.0.4.dev14_amd64.buildinfo net optional
+deluged_2.0.4.dev14_all.deb net optional

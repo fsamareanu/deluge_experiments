@@ -1,0 +1,8 @@
+libtorrent-rasterbar-dbg_1.1.13.99_amd64.deb debug extra
+libtorrent-rasterbar-dev_1.1.13.99_amd64.deb libdevel optional
+libtorrent-rasterbar9_1.1.13.99_amd64.deb libs optional
+libtorrent-rasterbar_1.1.13.99_amd64.buildinfo libs optional
+python-libtorrent-dbg_1.1.13.99_amd64.deb debug extra
+python-libtorrent_1.1.13.99_amd64.deb python optional
+python3-libtorrent-dbg_1.1.13.99_amd64.deb debug extra
+python3-libtorrent_1.1.13.99_amd64.deb python optional

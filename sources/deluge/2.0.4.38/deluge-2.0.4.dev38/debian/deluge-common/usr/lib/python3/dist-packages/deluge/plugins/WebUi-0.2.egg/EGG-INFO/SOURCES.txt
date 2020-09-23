@@ -1,0 +1,13 @@
+setup.py
+WebUi.egg-info/PKG-INFO
+WebUi.egg-info/SOURCES.txt
+WebUi.egg-info/dependency_links.txt
+WebUi.egg-info/entry_points.txt
+WebUi.egg-info/top_level.txt
+deluge_webui/__init__.py
+deluge_webui/common.py
+deluge_webui/core.py
+deluge_webui/gtkui.py
+deluge_webui/data/config.ui
+deluge_webui/tests/__init__.py
+deluge_webui/tests/test_plugin_webui.py

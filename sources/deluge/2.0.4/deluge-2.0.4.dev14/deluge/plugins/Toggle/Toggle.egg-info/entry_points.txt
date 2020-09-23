@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    Toggle = deluge_toggle:CorePlugin
+    [deluge.plugin.gtk3ui]
+    Toggle = deluge_toggle:GtkUIPlugin
+    [deluge.plugin.web]
+    Toggle = deluge_toggle:WebUIPlugin
+    

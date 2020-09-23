@@ -1,0 +1,11 @@
+debian/tmp/usr/bin/deluge-console
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/__init__.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/__pycache__
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/cmdline
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/console.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/main.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/modes
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/parser.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/utils
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/console/widgets
+debian/tmp/usr/share/man/man1/deluge-console.1

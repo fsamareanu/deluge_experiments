@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Toggle
+Version: 0.4
+Summary: Toggles the session
+Home-page: http://deluge-torrent.org
+Author: John Garland
+Author-email: johnnybg+deluge@gmail.com
+License: GPLv3
+Description: Toggles the session
+Platform: UNKNOWN

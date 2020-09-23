@@ -1,0 +1,17 @@
+debian/tmp/usr/bin/deluge-web
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/__init__.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/__pycache__
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/auth.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/common.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/css
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/icons
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/images
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/index.html
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/js
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/json_api.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/pluginmanager.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/render
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/server.py
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/themes
+debian/tmp/usr/lib/python3/dist-packages/deluge/ui/web/web.py
+debian/tmp/usr/share/man/man1/deluge-web.1

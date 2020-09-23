@@ -1,0 +1,20 @@
+Package: libtorrent-rasterbar-dev
+Source: libtorrent-rasterbar
+Version: 1.1.13.99
+Architecture: amd64
+Maintainer: Calum Lind <calumlind@gmail.com>
+Installed-Size: 19192
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: libtorrent-rasterbar9 (= 1.1.13.99), libboost-system1.55-dev | libboost-system-dev, libssl-dev, pkg-config
+Section: libdevel
+Priority: optional
+Homepage: http://www.libtorrent.org
+Description: libtorrent C++ BitTorrent Library - Development Files
+ libtorrent (rasterbar) is an efficient feature-complete C++ BitTorrent library.
+ .
+ The main goals of libtorrent are:
+  * to be cpu efficient
+  * to be memory efficient
+  * to be very easy to use
+ .
+ This package contains header files and static version of the library.

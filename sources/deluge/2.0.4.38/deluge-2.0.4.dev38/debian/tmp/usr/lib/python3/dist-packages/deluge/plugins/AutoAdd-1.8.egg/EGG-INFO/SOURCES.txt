@@ -1,0 +1,17 @@
+setup.py
+AutoAdd.egg-info/PKG-INFO
+AutoAdd.egg-info/SOURCES.txt
+AutoAdd.egg-info/dependency_links.txt
+AutoAdd.egg-info/entry_points.txt
+AutoAdd.egg-info/top_level.txt
+deluge_autoadd/__init__.py
+deluge_autoadd/common.py
+deluge_autoadd/core.py
+deluge_autoadd/gtkui.py
+deluge_autoadd/webui.py
+deluge_autoadd/data/autoadd.js
+deluge_autoadd/data/autoadd_options.js
+deluge_autoadd/data/autoadd_options.ui
+deluge_autoadd/data/config.ui
+deluge_autoadd/data/autoadd_options/main_tab.js
+deluge_autoadd/data/autoadd_options/options_tab.js

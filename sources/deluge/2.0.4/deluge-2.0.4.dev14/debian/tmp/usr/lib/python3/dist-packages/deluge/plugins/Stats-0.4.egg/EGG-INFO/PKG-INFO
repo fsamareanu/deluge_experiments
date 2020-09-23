@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: Stats
+Version: 0.4
+Summary: Display stats graphs
+Home-page: http://deluge-torrent.org
+Author: Ian Martin
+Author-email: ianmartin@cantab.net
+License: GPLv3
+Description: 
+        Records lots of extra stats
+        and produces time series
+        graphs
+Platform: UNKNOWN

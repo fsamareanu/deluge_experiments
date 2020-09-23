@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    AutoAdd = deluge_autoadd:CorePlugin
+    [deluge.plugin.gtk3ui]
+    AutoAdd = deluge_autoadd:Gtk3UIPlugin
+    [deluge.plugin.web]
+    AutoAdd = deluge_autoadd:WebUIPlugin
+    

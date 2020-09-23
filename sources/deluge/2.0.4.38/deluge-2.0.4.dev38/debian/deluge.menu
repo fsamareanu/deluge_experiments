@@ -1,0 +1,9 @@
+?package(deluge): \
+ needs="X11" \
+ section="Applications/Network/File Transfer" \
+ title="Deluge" \
+ command="/usr/bin/deluge" \
+ longtitle="Deluge BitTorrent Client" \
+ icon="/usr/share/pixmaps/deluge.xpm" \
+ description="Deluge is a full-featured, multi-platform, multi-interface \
+ BitTorrent client utilizing libtorrent.

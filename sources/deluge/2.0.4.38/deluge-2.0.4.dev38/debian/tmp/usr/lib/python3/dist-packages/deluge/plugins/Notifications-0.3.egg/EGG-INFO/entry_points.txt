@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    Notifications = deluge_notifications:CorePlugin
+    [deluge.plugin.gtk3ui]
+    Notifications = deluge_notifications:GtkUIPlugin
+    [deluge.plugin.web]
+    Notifications = deluge_notifications:WebUIPlugin
+    

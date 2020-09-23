@@ -1,0 +1,12 @@
+setup.py
+Toggle.egg-info/PKG-INFO
+Toggle.egg-info/SOURCES.txt
+Toggle.egg-info/dependency_links.txt
+Toggle.egg-info/entry_points.txt
+Toggle.egg-info/top_level.txt
+deluge_toggle/__init__.py
+deluge_toggle/common.py
+deluge_toggle/core.py
+deluge_toggle/gtkui.py
+deluge_toggle/webui.py
+deluge_toggle/data/toggle.js

@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    Scheduler = deluge_scheduler:CorePlugin
+    [deluge.plugin.gtk3ui]
+    Scheduler = deluge_scheduler:GtkUIPlugin
+    [deluge.plugin.web]
+    Scheduler = deluge_scheduler:WebUIPlugin
+    

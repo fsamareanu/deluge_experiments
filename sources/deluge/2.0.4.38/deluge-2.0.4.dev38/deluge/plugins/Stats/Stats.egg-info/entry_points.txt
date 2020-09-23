@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    Stats = deluge_stats:CorePlugin
+    [deluge.plugin.gtk3ui]
+    Stats = deluge_stats:GtkUIPlugin
+    [deluge.plugin.web]
+    Stats = deluge_stats:WebUIPlugin
+    

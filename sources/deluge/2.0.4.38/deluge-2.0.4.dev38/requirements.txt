@@ -1,0 +1,13 @@
+twisted[tls]>=17.1
+rencode
+pyopenssl
+pyxdg
+pillow
+mako
+chardet
+six
+setproctitle
+pywin32; sys_platform == 'win32'
+certifi; sys_platform == 'win32'
+zope.interface>=4.4.2
+distro; 'win' not in sys_platform

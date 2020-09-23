@@ -1,0 +1,15 @@
+setup.py
+Scheduler.egg-info/PKG-INFO
+Scheduler.egg-info/SOURCES.txt
+Scheduler.egg-info/dependency_links.txt
+Scheduler.egg-info/entry_points.txt
+Scheduler.egg-info/top_level.txt
+deluge_scheduler/__init__.py
+deluge_scheduler/common.py
+deluge_scheduler/core.py
+deluge_scheduler/gtkui.py
+deluge_scheduler/webui.py
+deluge_scheduler/data/green.svg
+deluge_scheduler/data/red.svg
+deluge_scheduler/data/scheduler.js
+deluge_scheduler/data/yellow.svg

@@ -1,0 +1,21 @@
+Package: python-libtorrent-dbg
+Source: libtorrent-rasterbar
+Version: 1.1.13.99
+Architecture: amd64
+Maintainer: Calum Lind <calumlind@gmail.com>
+Installed-Size: 1649
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: libboost-python1.67.0, libboost-system1.67.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2), libtorrent-rasterbar9 (>= 1.1.13.99), python-dbg (<< 2.8), python-dbg (>= 2.7), python-libtorrent (= 1.1.13.99)
+Provides: python2.7-libtorrent-dbg
+Section: debug
+Priority: extra
+Homepage: http://www.libtorrent.org
+Description: libtorrent Python Bindings - Debug Symbols
+ libtorrent (rasterbar) is an efficient feature-complete C++ BitTorrent library.
+ .
+ The main goals of libtorrent-rasterbar are:
+  * to be cpu efficient
+  * to be memory efficient
+  * to be very easy to use
+ .
+ This package contains debug symbols for libtorrent Python Bindings.

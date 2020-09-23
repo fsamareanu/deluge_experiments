@@ -1,0 +1,23 @@
+Package: deluge-common
+Source: deluge
+Version: 2.0.4.dev38
+Architecture: all
+Maintainer: Calum Lind <calumlind@gmail.com>
+Installed-Size: 3656
+Depends: python3-chardet, python3-mako, python3-openssl, python3-pil, python3-pyasn1, python3-rencode, python3-setproctitle, python3-six, python3-twisted (>= 11.1), python3-xdg, python3-zope.interface, python3:any, python3-pkg-resources
+Recommends: python3-geoip, geoip-database, python3-dbus
+Section: net
+Priority: optional
+Homepage: https://www.deluge-torrent.org
+Description: Deluge Common Files
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ This package contains data files common to both the daemon and the
+ various user-interfaces.

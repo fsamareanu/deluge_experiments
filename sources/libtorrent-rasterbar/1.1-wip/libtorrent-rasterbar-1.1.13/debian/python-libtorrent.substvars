@@ -1,0 +1,6 @@
+python:Depends=python (<< 2.8), python (>= 2.7)
+python:Provides=python2.7-libtorrent
+python:Versions=2.7
+shlibs:Depends=libboost-python1.67.0, libboost-system1.67.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2), libtorrent-rasterbar9 (>= 1.1.13.99)
+misc:Depends=
+misc:Pre-Depends=

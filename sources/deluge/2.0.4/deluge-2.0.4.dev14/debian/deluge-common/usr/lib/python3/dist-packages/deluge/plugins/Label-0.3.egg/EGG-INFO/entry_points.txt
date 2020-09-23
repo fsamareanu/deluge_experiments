@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    Label = deluge_label:CorePlugin
+    [deluge.plugin.gtk3ui]
+    Label = deluge_label:GtkUIPlugin
+    [deluge.plugin.web]
+    Label = deluge_label:WebUIPlugin
+    

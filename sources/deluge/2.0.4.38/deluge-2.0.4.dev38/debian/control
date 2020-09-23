@@ -1,0 +1,160 @@
+Source: deluge
+Section: net
+Priority: optional
+Maintainer: Calum Lind <calumlind@gmail.com>
+Build-Depends-Indep:
+   debhelper (>=9),
+   dh-python,
+   intltool,
+   python3-all,
+   python3-setuptools,
+   python3-wheel,
+   closure-compiler,
+   unzip
+Standards-Version: 4.0.0
+Vcs-Git:  https://git.launchpad.net/~calumlind/+git/lp_deluge_deb
+Vcs-Browser: https://code.launchpad.net/~calumlind/+git/lp_deluge_deb
+Homepage: https://www.deluge-torrent.org
+
+Package: deluge-common
+Architecture: all
+Depends:
+   ${misc:Depends},
+   ${python3:Depends},
+   python3-six,
+   python3-twisted (>= 11.1),
+   python3-openssl,
+   python3-pkg-resources,
+   python3-chardet,
+   python3-xdg,
+   python3-rencode
+Recommends:
+   python3-setproctitle,
+   python3-pil,
+   python3-geoip,
+   geoip-database,
+   python3-dbus
+Description: Deluge Common Files
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ This package contains data files common to both the daemon and the
+ various user-interfaces.
+
+Package: deluged
+Architecture: all
+Depends:
+   ${misc:Depends},
+   ${python3:Depends},
+   deluge-common (= ${source:Version}),
+   python3-libtorrent (>= 1.1.1)
+Description: Deluge Daemon (deluged)
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ You may want to install this package to run the daemon application on a remote
+ server and connect to it from any user-interface.
+ See: <URL:http://dev.deluge-torrent.org/wiki/UserGuide/ThinClient>
+
+Package: deluge-console
+Architecture: all
+Depends:
+   ${misc:Depends},
+   ${python3:Depends},
+   deluge-common (= ${source:Version})
+Description: Deluge Console UI
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ This package contains the console user-interface.
+
+Package: deluge-web
+Architecture: all
+Depends:
+   ${misc:Depends},
+   ${python3:Depends},
+   deluge-common (= ${source:Version}),
+   python3-mako
+Breaks: deluge-web (<< 1.3.0)
+Replaces: deluge-web (<< 1.3.0)
+Description: Deluge Web UI
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ You may want to install this package on a remote server running the deluge
+ daemon (package deluged).
+ See: <URL:http://dev.deluge-torrent.org/wiki/UserGuide/ThinClient>
+
+Package: deluge-gtk
+Architecture: all
+Depends:
+   ${misc:Depends},
+   ${python3:Depends},
+   deluge-common (= ${source:Version}),
+   python3-gi,
+   python3-gi-cairo,
+   gir1.2-gtk-3.0,
+   librsvg2-common,
+   xdg-utils
+Breaks: deluge-gtk (<< 1.3.0)
+Replaces: deluge-gtk (<< 1.3.0)
+Recommends: gir1.2-appindicator3-0.1, python3-pygame, libnotify4
+Description: Deluge GTK UI
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ You may want to install this package to use the Deluge GTK+ user-interface
+ as a thin client and connect to a remote daemon.
+ See: <URL:http://dev.deluge-torrent.org/wiki/UserGuide/ThinClient>
+
+Package: deluge
+Architecture: all
+Depends:
+   ${misc:Depends},
+   ${python3:Depends},
+   python3-libtorrent (>= 1.1.1),
+   deluge-gtk (= ${source:Version})
+Breaks: deluge-common (<< 1.3.0)
+Replaces: deluge-common (<< 1.3.0)
+Description: Deluge BitTorrent Client
+ Deluge is a full-featured, multi-platform, multi-interface BitTorrent client
+ using libtorrent-rasterbar in it's backend and featuring multiple
+ user-interfaces: GTK+, web and console.
+ .
+ It has been designed using the client-server model with a daemon process that
+ handles all the BitTorrent activity. The Deluge daemon is able to run on
+ headless machines with the user-interfaces being able to connect remotely
+ from any platform.
+ .
+ You may want to install this package to use Deluge in standalone mode,
+ which means the daemon and the GTK+ user-interface are linked together.

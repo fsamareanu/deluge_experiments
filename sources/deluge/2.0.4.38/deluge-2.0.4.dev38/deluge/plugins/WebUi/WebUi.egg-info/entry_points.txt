@@ -1,0 +1,6 @@
+
+    [deluge.plugin.core]
+    WebUi = deluge_webui:CorePlugin
+    [deluge.plugin.gtk3ui]
+    WebUi = deluge_webui:GtkUIPlugin
+    

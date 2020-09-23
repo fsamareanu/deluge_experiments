@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Sun, 10 Nov 2019 05:36:33 +0100
+Source: deluge
+Binary: deluge deluge-common deluge-console deluge-gtk deluge-web deluged
+Architecture: all
+Version: 2.0.4.dev38
+Distribution: buster
+Urgency: medium
+Maintainer: Calum Lind <calumlind@gmail.com>
+Changed-By: Ubuntu 18.04 <foobar@Build.Chmuranet.net>
+Description:
+ deluge     - Deluge BitTorrent Client
+ deluge-common - Deluge Common Files
+ deluge-console - Deluge Console UI
+ deluge-gtk - Deluge GTK UI
+ deluge-web - Deluge Web UI
+ deluged    - Deluge Daemon (deluged)
+Changes:
+ deluge (2.0.4.dev38) buster; urgency=medium
+ .
+   * Rebuilt from source
+Checksums-Sha1:
+ e03327c68c5afbf43af3a2b37726fe8a2e1fec46 605268 deluge-common_2.0.4.dev38_all.deb
+ c72f78b639010a77522f8d6e823b5a6bdb3f8df2 82816 deluge-console_2.0.4.dev38_all.deb
+ 72bb2c191018e364d788bae708483bc5bc1af4dd 193504 deluge-gtk_2.0.4.dev38_all.deb
+ f790937329f2d2deaabcb7fbe2c3d39260d3acb5 730512 deluge-web_2.0.4.dev38_all.deb
+ 6559fc4378ad30259e0381d4ae11f5c4e54beb50 11660 deluge_2.0.4.dev38_all.deb
+ d5312f831f65eb8f37d118ce843f7c8e3c824f42 9100 deluge_2.0.4.dev38_amd64.buildinfo
+ b81730872a3267de5126c3666fab8c2ef148620c 9496 deluged_2.0.4.dev38_all.deb
+Checksums-Sha256:
+ c6ff5bb5460055c7ffa1fc86b776205d7cdfb6e117609544ea4e93a9552cadfa 605268 deluge-common_2.0.4.dev38_all.deb
+ 2c5f8014e8777cd9588be3a360b0630cc5418ad0251d347b8885bf4b9526e19e 82816 deluge-console_2.0.4.dev38_all.deb
+ 2d3b1d724043dd963e1722ab19b8d1a36377dbfa0491f79dbdda065112713e7d 193504 deluge-gtk_2.0.4.dev38_all.deb
+ d06ae1a7d29d80f1bf0a4543a8af0b2f97bbd4c838895a2d09e6e9869db86076 730512 deluge-web_2.0.4.dev38_all.deb
+ ee6b93d2bbdda7329781113910e0baba10d5e6fa1f6f2d0584b01624e23e27b8 11660 deluge_2.0.4.dev38_all.deb
+ b4de3aba2b1f22d846ed0a826fa3b6eb3923d4b15a57242f46dab2b3238ae638 9100 deluge_2.0.4.dev38_amd64.buildinfo
+ d361d8fb5229c229a9991ca2d900774f9b12d47684fa330927eded31cb489c70 9496 deluged_2.0.4.dev38_all.deb
+Files:
+ 2f1b7d531b392d5b5280a6f01899c24e 605268 net optional deluge-common_2.0.4.dev38_all.deb
+ a7fd981a193f54e37486cbc1d7e6e837 82816 net optional deluge-console_2.0.4.dev38_all.deb
+ 14bfa8e400f09b5707a5d0f364a4492b 193504 net optional deluge-gtk_2.0.4.dev38_all.deb
+ 6f5752e8c62605837552b219625483a9 730512 net optional deluge-web_2.0.4.dev38_all.deb
+ dcabb172d20bb3145956c5798e1dbb53 11660 net optional deluge_2.0.4.dev38_all.deb
+ 93a123186b92c6a1bfe40294286ce4e0 9100 net optional deluge_2.0.4.dev38_amd64.buildinfo
+ 9b6b380e9cd9874b2290d7902120a9cc 9496 net optional deluged_2.0.4.dev38_all.deb
