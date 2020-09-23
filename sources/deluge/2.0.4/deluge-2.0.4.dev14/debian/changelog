@@ -1,4 +1,4 @@
-deluge (2.0.4.dev14) bionic; urgency=medium
+deluge (2.0.4.dev14) buster; urgency=medium
 
   * Rebuilt from source
 

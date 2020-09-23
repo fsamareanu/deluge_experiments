@@ -1,6 +1,6 @@
-libtorrent-rasterbar (1.2.2-99) bionic; urgency=low
+libtorrent-rasterbar (1.2.2.99) buster; urgency=low
 
-  * Added patches.
+  * Added patches
 
  -- Chmura Package Builder <foobar@chmuranet.net>  Thu, 9 Nov 2019 20:19:09 +0000
 

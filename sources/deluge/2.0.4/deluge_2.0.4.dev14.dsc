@@ -17,8 +17,8 @@ Package-List:
  deluge-web deb net optional arch=all
  deluged deb net optional arch=all
 Checksums-Sha1:
- 5486719336725d9013928b0664fcc0327922a997 2390268 deluge_2.0.4.dev14.tar.xz
+ 23201fd215650b336059e904f5dbf5fb0ac21bf6 2390320 deluge_2.0.4.dev14.tar.xz
 Checksums-Sha256:
- 65b94ff37b0275425d357bf5ce87f0c348ddd4760575da84e28472dc70385414 2390268 deluge_2.0.4.dev14.tar.xz
+ d90f9c39bdbe5f2596ec27ac0a9784eeb6388c8c82790f81892b81178b212f6d 2390320 deluge_2.0.4.dev14.tar.xz
 Files:
- 3522e2bc00fc519eb0d0e453f3bde03c 2390268 deluge_2.0.4.dev14.tar.xz
+ 57614022904ba82129ee1bd2eb7ae7df 2390320 deluge_2.0.4.dev14.tar.xz

@@ -1,10 +1,10 @@
 Format: 1.8
 Date: Sun, 10 Nov 2019 05:36:33 +0100
 Source: deluge
-Binary: deluge-common deluged deluge-console deluge-web deluge-gtk deluge
+Binary: deluge deluge-common deluge-console deluge-gtk deluge-web deluged
 Architecture: source all
 Version: 2.0.4.dev14
-Distribution: bionic
+Distribution: buster
 Urgency: medium
 Maintainer: Calum Lind <calumlind@gmail.com>
 Changed-By: Ubuntu 18.04 <foobar@Build.Chmuranet.net>
@@ -16,36 +16,36 @@ Description:
  deluge-web - Deluge Web UI
  deluged    - Deluge Daemon (deluged)
 Changes:
- deluge (2.0.4.dev14) bionic; urgency=medium
+ deluge (2.0.4.dev14) buster; urgency=medium
  .
    * Rebuilt from source
 Checksums-Sha1:
- 7f5f40e5a4c1b63c96b1d1ee23400b9a2433d2b2 1059 deluge_2.0.4.dev14.dsc
- 5486719336725d9013928b0664fcc0327922a997 2390268 deluge_2.0.4.dev14.tar.xz
- 9be667b96483368d5d97b25e58ba81d0c910060f 605756 deluge-common_2.0.4.dev14_all.deb
- fd5f37cb6cc0d0263a3b55c0eeff41582f2434ab 83104 deluge-console_2.0.4.dev14_all.deb
- c3692798a60197c47087bc2678b8a426b505e8e9 193244 deluge-gtk_2.0.4.dev14_all.deb
- 2cfef083c1ce3f458918692444f5f7d33adbd103 730632 deluge-web_2.0.4.dev14_all.deb
- bbdb9969bde705d115ddf8c34fcb150b3e329509 11688 deluge_2.0.4.dev14_all.deb
- 3370b691f4ac5c63473d448579a70bfe78fc8c11 10340 deluge_2.0.4.dev14_amd64.buildinfo
- 072abe56921119fcc88ade9f44e34481b49fa739 9504 deluged_2.0.4.dev14_all.deb
+ 1e9ef818e500363619c714de6e3ba8f200ee0d41 1059 deluge_2.0.4.dev14.dsc
+ 23201fd215650b336059e904f5dbf5fb0ac21bf6 2390320 deluge_2.0.4.dev14.tar.xz
+ 00d939d3009746dac181825392cfee6dd498754c 605448 deluge-common_2.0.4.dev14_all.deb
+ b5e8a4ff26f2b557a9b6d3d79a7b667f168872ba 83088 deluge-console_2.0.4.dev14_all.deb
+ 881306de4f849e5879c0f992314a638df8ee0934 193324 deluge-gtk_2.0.4.dev14_all.deb
+ 73de6e79c52e630709bca3bb3c2eb470ed2be8e7 730688 deluge-web_2.0.4.dev14_all.deb
+ ca53ff55291ede949dac70ca78d9dfba2e9db835 11664 deluge_2.0.4.dev14_all.deb
+ ef8640ec5baf6933ecdc033119929c43d9437b72 9227 deluge_2.0.4.dev14_amd64.buildinfo
+ da33f958f6c11c6c01bd7fd15bc43d396a0873c5 9492 deluged_2.0.4.dev14_all.deb
 Checksums-Sha256:
- cb1e7192f5913432e9cf1564e0fe7e35662696aff692298e56a68a34383c8cda 1059 deluge_2.0.4.dev14.dsc
- 65b94ff37b0275425d357bf5ce87f0c348ddd4760575da84e28472dc70385414 2390268 deluge_2.0.4.dev14.tar.xz
- 96c970dffa76f0481162594b414cdc5cc8020503e0a8c5f455c52215673971cf 605756 deluge-common_2.0.4.dev14_all.deb
- cc0393902de3acf8ac706b25ac2479b3af4b9596a615f67e34b1c8a7789b3851 83104 deluge-console_2.0.4.dev14_all.deb
- 82b57a340d36601f29271358b588aa29fd9b1f86a6d11fe7079e6c69312565b0 193244 deluge-gtk_2.0.4.dev14_all.deb
- 3dd5f31b2339adb880c00718aae72d0fd65f4891a1ec796634cda55f74973d2d 730632 deluge-web_2.0.4.dev14_all.deb
- 808c882984037be37688e8f90b88d9fd286ce4ae2b20f4df9affcc074e664c19 11688 deluge_2.0.4.dev14_all.deb
- 9d85eaadfdc382c826c834124956caba1066798a1625af60e923e7594d981a98 10340 deluge_2.0.4.dev14_amd64.buildinfo
- cb4d846219dfe47fe158ea4f6dc007b98c4bba301473d0828285bfed49de093c 9504 deluged_2.0.4.dev14_all.deb
+ b4a5759029c4ec12a79562f2102c171c3531352b88b8b6bf9779039002183cc2 1059 deluge_2.0.4.dev14.dsc
+ d90f9c39bdbe5f2596ec27ac0a9784eeb6388c8c82790f81892b81178b212f6d 2390320 deluge_2.0.4.dev14.tar.xz
+ ff49b278425fca55e2bc73b436380e9de0eed0d913162c349a2b05556b1302b9 605448 deluge-common_2.0.4.dev14_all.deb
+ 9cf685608b4a52ae38619c8f91f585eae10a3737e35ff0ee5208648136b25b57 83088 deluge-console_2.0.4.dev14_all.deb
+ 0055dfb2a4b4572ee057adee868913ec0819b8d511dc9e97aadb9b8190a17374 193324 deluge-gtk_2.0.4.dev14_all.deb
+ 0d275980449abd342ed1be96ceac63b72de6c1a868b0946a6b8de264f65690cc 730688 deluge-web_2.0.4.dev14_all.deb
+ 2fbc4455f3c7dd5a039c542b6ab362ac49db6a4e18447e818e645211537dc1ad 11664 deluge_2.0.4.dev14_all.deb
+ f6677e38320e8b0c34aa8987a3bc8a99506e4b43bc81c397c4b5b1845dab53e4 9227 deluge_2.0.4.dev14_amd64.buildinfo
+ c06053f67a834bb34c9f957b762c04502a0698f562f7c1dd3351da26a7fc029b 9492 deluged_2.0.4.dev14_all.deb
 Files:
- fbdac85f631edcb208fc9bf20ed0b1fa 1059 net optional deluge_2.0.4.dev14.dsc
- 3522e2bc00fc519eb0d0e453f3bde03c 2390268 net optional deluge_2.0.4.dev14.tar.xz
- e0c4767e509583919a0c2a0a28642736 605756 net optional deluge-common_2.0.4.dev14_all.deb
- 6119370ed78f9440ae2a303983411f1f 83104 net optional deluge-console_2.0.4.dev14_all.deb
- 831e694ede34e058c2def738b9051221 193244 net optional deluge-gtk_2.0.4.dev14_all.deb
- adc2b27ea310dc8b4027b1227e38b77d 730632 net optional deluge-web_2.0.4.dev14_all.deb
- f688201a8d7463e0a3a8b6f40e8287c4 11688 net optional deluge_2.0.4.dev14_all.deb
- c343fd2aad1109010b35875ae28821b1 10340 net optional deluge_2.0.4.dev14_amd64.buildinfo
- 479d9a52a76845ae34340fd7db24a32a 9504 net optional deluged_2.0.4.dev14_all.deb
+ 369eebdc6d810eccdb603f6278a5831c 1059 net optional deluge_2.0.4.dev14.dsc
+ 57614022904ba82129ee1bd2eb7ae7df 2390320 net optional deluge_2.0.4.dev14.tar.xz
+ 2e400ba1939c4f2045f0159718f0f8e4 605448 net optional deluge-common_2.0.4.dev14_all.deb
+ 92d41b91f4f4bd77788c24b882589127 83088 net optional deluge-console_2.0.4.dev14_all.deb
+ 344154ee4d8c71f33be5d89e0824c25d 193324 net optional deluge-gtk_2.0.4.dev14_all.deb
+ b92b8d18f5ff4bbd84e010364d0f60ee 730688 net optional deluge-web_2.0.4.dev14_all.deb
+ f2f82ba98596c01b6e6e22e496988cae 11664 net optional deluge_2.0.4.dev14_all.deb
+ 2c0ebc4dcd6e39eaa589164d7cf8a1d0 9227 net optional deluge_2.0.4.dev14_amd64.buildinfo
+ 01d4495a735d42c72efc86566702b29c 9492 net optional deluged_2.0.4.dev14_all.deb
